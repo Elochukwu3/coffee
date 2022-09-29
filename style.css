@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+html {
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    }
+    html::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+    }
+
+body{
+    overflow-y: auto;
+    margin: 0;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    
+}
+body::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background: transparent;
+  }
+.top-nav{
+    background-color: transparent;
+    background: rgba(50, 49, 48, .1);
+    border: unset;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    z-index: 20;
+}
+
+
+.scroll {
+ 
+  background-color: #323130;
+}
+.top-nav-sect1 li{
+    padding: 0 10px;
+    font-size: 1.2em;
+}
+.nav-btn{
+    color: black;
+   background-color: goldenrod;
+   font-size: 1.1em;
+   padding: 10px 10px;
+   font-weight: bolder;
+   border: unset;
+   text-transform: uppercase;
+}
+
+.banner-section{
+    background-blend-mode: overlay;
+    background-image: url(https://www.tradecraft.me/wp-content/uploads/2022/01/home-banner-1.jpg) !important;
+    /* background-image: url("coffee image/home-banner-1.jpg"); */
+background-repeat: no-repeat;
+background-blend-mode: overlay !important;
+    background-size: cover;
+    /* object-position: center; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-clip: border-box;
+}
+.banner-section h3{
+    padding-top: 12rem;
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: bold;
+}
+.banner-section h1{
+    color: whitesmoke;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+#card{
+display: flex;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #323130;
+background-clip: border-box;
+border: 1px solid goldenrod;
+border-radius: .25rem;
+margin: 0 .1rem;
+}
+#imgSect{display: flex;
+justify-content: center; align-items: center; height: 100%;}
+.center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-circle-wrapper{
+background-color: #F7DFAD;
+/* background: #e19344; */
+width: 28rem; 
+height: 27rem; 
+
+}
+.image-circle-wrapper::after{
+    content: '';
+background-color: #F7DFAD;
+position: absolute;
+top: 2%;
+right: 5%;
+width: 100%;
+height: 100%;
+z-index: -1;
+border-radius: 50%;
+}
+.sliderTwo{
+ width: 30rem;
+padding-left: 35px;
+margin: 22px 2px 30px 0px;
+border-radius: 0px 0px 115px 0px;
+height: 300px;
+position: relative;
+}
+.sliderTwo::before{
+content: '';
+position: absolute !important;
+width: 102%;
+height: 100%;
+top: 16px;
+left: 0px;
+background-color: #F7DFAD;
+border-radius: 0px 0px 115px 0px;
+/* z-index: 1; */
+}
+#textff{
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 115px 0px;
+    z-index: 1; 
+    padding: 1rem;
+    line-height: 1.6rem;
+}
+  
+@media (max-width: 575.98px) { 
+    #holder{
+        /* flex-direction: row; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+    #holderText{
+        width: 400px;
+        padding: 0 .3rem;
+        word-break: break-all;
+    }
+    #imgCaption{
+        font-size: smaller;
+        font-weight: none;
+        /* font-size: 10px; */
+        word-break: normal;
+        font-size: .4em;
+    }
+    #bolderText{
+        font-size: 1.6rem !important;
+        font-weight: 400;
+    }
+    
+}
